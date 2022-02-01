@@ -29,6 +29,12 @@ _global_script_class_icons={
 config/name="Eoj-court-record"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1500
+window/size/height=771
+window/size/resizable=false
+
 [physics]
 
 common/enable_pause_aware_picking=true
