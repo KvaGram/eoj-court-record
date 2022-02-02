@@ -27,6 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Eoj-court-record"
+run/main_scene="res://src/court_record.tscn"
 config/icon="res://icon.png"
 
 [debug]
@@ -38,7 +39,8 @@ gdscript/warnings/integer_division=false
 
 window/size/width=1500
 window/size/height=771
-window/size/resizable=false
+window/stretch/mode="viewport"
+window/stretch/aspect="keep"
 
 [physics]
 
