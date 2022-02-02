@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://src/resources/evidence/DOCUMENT.png" type="Texture" id=1]
 [ext_resource path="res://src/resources/evidence/EVIDENCE_BACKGROUND.png" type="Texture" id=2]
@@ -7,7 +7,14 @@
 [ext_resource path="res://src/resources/font_details.tres" type="DynamicFont" id=5]
 [ext_resource path="res://src/resources/font_title.tres" type="DynamicFont" id=6]
 [ext_resource path="res://src/court_record.gd" type="Script" id=7]
+[ext_resource path="res://src/RecordData.gd" type="Script" id=8]
 [ext_resource path="res://src/records/case 2/episode_4_part_0.tres" type="Resource" id=9]
+[ext_resource path="res://src/resources/profiles/PROFILE_BACKGROUND.png" type="Texture" id=10]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 8 )
+evidence = [  ]
+profiles = [  ]
 
 [node name="court_record" type="Control"]
 anchor_right = 1.0
@@ -18,7 +25,10 @@ script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-data = [ [ [  ], [  ], [  ] ], [ [  ], [  ], [  ], [ ExtResource( 9 ) ] ] ]
+data = [ [ [ SubResource( 1 ) ], [  ], [  ] ], [ [  ], [  ], [  ], [ ExtResource( 9 ) ] ] ]
+evidence_background = ExtResource( 2 )
+profile_background = ExtResource( 10 )
+empty_item = ExtResource( 3 )
 
 [node name="background" type="Panel" parent="."]
 anchor_right = 1.0
@@ -171,13 +181,16 @@ margin_right = 1384.0
 margin_bottom = 130.0
 text = ">"
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="img_item" type="TextureRect" parent="."]
 margin_left = 56.0
 margin_top = 68.0
 margin_right = 537.0
 margin_bottom = 553.0
 texture = ExtResource( 1 )
 expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="txt_title" type="Label" parent="."]
 margin_left = 545.0
@@ -224,13 +237,14 @@ margin_left = 43.0
 margin_top = 6.0
 margin_right = 249.0
 margin_bottom = 44.0
-text = "Case 2 episode 4 part 0"
+text = "PLACEHOLDER PART NAME"
 flat = false
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="pop_fullscreens" type="WindowDialog" parent="."]
+visible = true
 margin_left = 34.0
 margin_top = 36.0
 margin_right = 1415.0
@@ -247,7 +261,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PREV" type="ToolButton" parent="pop_fullscreens/row"]
+[node name="d-PREV" type="ToolButton" parent="pop_fullscreens/row"]
 margin_right = 20.0
 margin_bottom = 712.0
 text = "<"
@@ -261,8 +275,15 @@ size_flags_vertical = 3
 texture = ExtResource( 4 )
 expand = true
 
-[node name="NEXT" type="ToolButton" parent="pop_fullscreens/row"]
+[node name="d-NEXT" type="ToolButton" parent="pop_fullscreens/row"]
 margin_left = 1361.0
 margin_right = 1381.0
 margin_bottom = 712.0
 text = ">"
+
+[connection signal="pressed" from="btn_switch" to="." method="_on_btn_switch_pressed"]
+[connection signal="pressed" from="itemrow/PREV" to="." method="_on_PREV_pressed"]
+[connection signal="pressed" from="itemrow/NEXT" to="." method="_on_NEXT_pressed"]
+[connection signal="pressed" from="btn_details" to="." method="_on_btn_details_pressed"]
+[connection signal="pressed" from="pop_fullscreens/row/d-PREV" to="." method="_on_dPREV_pressed"]
+[connection signal="pressed" from="pop_fullscreens/row/d-NEXT" to="." method="_on_dNEXT_pressed"]
