@@ -216,7 +216,7 @@ fullscreens = [ ExtResource( 44 ) ]
 [sub_resource type="Resource" id=3]
 script = ExtResource( 1 )
 name = "APOLLO"
-description = "Age: 24
+description = "[right]Age: 24[/right]
 A lawyer who's been at the agency since
 before I joined. He has an amazing ability to
 spot lies through people's tells."

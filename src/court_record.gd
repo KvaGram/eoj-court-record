@@ -88,7 +88,7 @@ func on_item_selected(index:int):
 	var itemlist:Array = recordData.profiles if profiles_mode else recordData.evidence
 	if(s_item >= len(itemlist)):
 		$txt_title.text = ""
-		$txt_details.text = ""
+		$txt_details.bbcode_text = ""
 		$img_item.texture = empty_item
 		$btn_details.disabled = true
 		$btn_details.visible = false
@@ -101,7 +101,7 @@ func on_item_selected(index:int):
 			$btn_details.disabled = false
 			$btn_details.visible = true
 		$txt_title.text = edata.name
-		$txt_details.text = edata.description
+		$txt_details.bbcode_text = edata.description
 		$img_item.texture = edata.icon	
 
 func refresh_details():
