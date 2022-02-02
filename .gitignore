@@ -11,3 +11,5 @@ export_presets.cfg
 data_*/
 default_env.tres
 project.godot
+
+/export
