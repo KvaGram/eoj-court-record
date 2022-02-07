@@ -7,10 +7,12 @@ export(Array, Array, Array, Resource) var data
 export(StreamTexture) var evidence_background
 export(StreamTexture) var profile_background
 export(StreamTexture) var empty_item
+export(Array, Resource) var about_data
 
 var recordData:RecordData
 var itempage := 0
 var profiles_mode := false
+var about_mode := false
 var detailspage := 0
 var s_item := 0
 
@@ -110,8 +112,8 @@ func on_part_selected(part_i, case_i, ep_i):
 	#refresh the court record.
 	refresh()
 func refresh():
-	$img_background.texture = profile_background if profiles_mode else evidence_background
-	var itemlist:Array = recordData.profiles if profiles_mode else recordData.evidence
+	$img_background.texture = profile_background if profiles_mode or about_mode else evidence_background
+	var itemlist:Array = about_data if about_mode else recordData.profiles if profiles_mode else recordData.evidence
 	#sanitize the itempage
 	itempage = clamp(itempage, 0, int((len(itemlist)-1)/10))
 	for i in range(10):
@@ -130,7 +132,7 @@ func refresh():
 
 func on_item_selected(index:int):
 	s_item = index + 10*itempage
-	var itemlist:Array = recordData.profiles if profiles_mode else recordData.evidence
+	var itemlist:Array = about_data if about_mode else recordData.profiles if profiles_mode else recordData.evidence
 	if(s_item >= len(itemlist)):
 		$txt_title.text = ""
 		$txt_details.bbcode_text = ""
@@ -199,5 +201,13 @@ func _on_btn_switch_pressed():
 	profiles_mode = not profiles_mode
 	$btn_switch.text = "Evidence" if profiles_mode else "Profiles"
 	$txt_group.text = "Profiles" if profiles_mode else "Evidence"
+	about_mode = false
+	$btn_about.pressed = false
 	refresh()
 	
+
+
+func _on_btn_about_toggled(state):
+	about_mode = state
+	$txt_group.text = "About/help" if state else "Profiles" if profiles_mode else "Evidence"
+	refresh()

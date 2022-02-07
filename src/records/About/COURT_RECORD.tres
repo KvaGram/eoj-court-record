@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/records/About/QUESTION_MARK.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "About"
+description = "[right]Version 0.01[/right]
+Current issues
+ * Data-entry for most info-cards
+ * Godot's default buttons must be replaced with 
+    buttons matching court record style."
+icon = ExtResource( 2 )
+fullscreens = [  ]

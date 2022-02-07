@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/records/About/KVAGRAM.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "KvaGram"
+description = "[right]Age 29[/right]
+A 'very' humble programmer who built this
+Interactive court record.
+Please report any bugs to the github-page.
+https://github.com/KvaGram/eoj-court-record/issues"
+icon = ExtResource( 2 )
+fullscreens = [  ]

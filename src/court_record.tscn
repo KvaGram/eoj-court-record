@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://src/resources/evidence/DOCUMENT.png" type="Texture" id=1]
 [ext_resource path="res://src/resources/evidence/EVIDENCE_BACKGROUND.png" type="Texture" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://src/records/case 2/episode_4_part_0.tres" type="Resource" id=9]
 [ext_resource path="res://src/resources/profiles/PROFILE_BACKGROUND.png" type="Texture" id=10]
 [ext_resource path="res://src/resources/font_menu.tres" type="DynamicFont" id=11]
+[ext_resource path="res://src/records/About/ABOUT_KVAGRAM.tres" type="Resource" id=12]
+[ext_resource path="res://src/records/About/COURT_RECORD.tres" type="Resource" id=13]
 
 [sub_resource type="Resource" id=1]
 script = ExtResource( 8 )
@@ -55,6 +57,7 @@ data = [ [ [ SubResource( 1 ) ], [ SubResource( 2 ) ], [ SubResource( 3 ) ] ], [
 evidence_background = ExtResource( 2 )
 profile_background = ExtResource( 10 )
 empty_item = ExtResource( 3 )
+about_data = [ ExtResource( 13 ), ExtResource( 12 ) ]
 
 [node name="background" type="Panel" parent="."]
 anchor_right = 1.0
@@ -87,12 +90,24 @@ __meta__ = {
 }
 
 [node name="btn_switch" type="Button" parent="."]
-margin_left = 1364.0
-margin_top = 733.0
-margin_right = 1496.0
-margin_bottom = 770.0
+margin_left = 1299.0
+margin_top = 735.0
+margin_right = 1451.0
+margin_bottom = 772.0
 custom_fonts/font = ExtResource( 11 )
 text = "Profiles"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="btn_about" type="Button" parent="."]
+margin_left = 1026.0
+margin_top = 735.0
+margin_right = 1286.0
+margin_bottom = 772.0
+custom_fonts/font = ExtResource( 11 )
+toggle_mode = true
+text = "Help/About"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -102,9 +117,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -668.0
+margin_left = -696.0
 margin_top = -169.0
-margin_right = 668.0
+margin_right = 711.0
 margin_bottom = -39.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -317,6 +332,7 @@ margin_bottom = 712.0
 text = ">"
 
 [connection signal="pressed" from="btn_switch" to="." method="_on_btn_switch_pressed"]
+[connection signal="toggled" from="btn_about" to="." method="_on_btn_about_toggled"]
 [connection signal="pressed" from="itemrow/PREV" to="." method="_on_PREV_pressed"]
 [connection signal="pressed" from="itemrow/NEXT" to="." method="_on_NEXT_pressed"]
 [connection signal="pressed" from="btn_details" to="." method="_on_btn_details_pressed"]
