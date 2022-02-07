@@ -57,12 +57,57 @@ func _ready():
 			ep_i += 1 
 		case_i += 1 
 	#end of version select setup
-	on_part_selected(0,0,0)
+	#Attempt to find arguments/parameters to load case episode and part indicies.
+	part_i = 0
+	case_i = 0
+	ep_i = 0
+	if OS.has_feature('JavaScript'):
+		part_i = _loadparam("part") # part counts from 0
+		#print("loaded part index " + str(part_i))
+		case_i = _loadparam("case") -1 # case's display counts from 1
+		#print("loaded part case " + str(case_i))
+		ep_i = _loadparam("episode") -1 # episode's display counts from 1
+		#print("loaded part episode " + str(ep_i))
 		
+	on_part_selected(part_i,case_i,ep_i)
+
+func _loadparam(param):
+	print("starting _loadparam(%s)"%param)
+	#If in browser, load from url arguments.
+	if OS.has_feature('JavaScript'):
+		var js = "var url_string = window.location.href;var url = new URL(url_string);url.searchParams.get(\"%s\");"%param
+		print (js)
+		var data = JavaScript.eval(js, false)
+		print("found " + str(data))
+		return int(data) if data else 0
+	return 0
 func on_part_selected(part_i, case_i, ep_i):
-	print("part_i " + str(part_i) + " - case_i " + str(case_i) + " - ep_i " + str(ep_i) )
+	print("load page - part_i " + str(part_i) + " - case_i " + str(case_i) + " - ep_i " + str(ep_i) )
+	#sanetize input before load (clamp to valid values)
+	case_i = min(case_i, len(data)-1)
+	case_i = max(0, case_i)
+	ep_i = min(ep_i, len(data[case_i])-1)
+	ep_i = max(0, ep_i)
+	part_i = min(part_i, len(data[case_i][ep_i])-1)
+	part_i = max(0, part_i)
+	print("corrected to - part_i " + str(part_i) + " - case_i " + str(case_i) + " - ep_i " + str(ep_i) )
+	
+	#set display-text on version-button
 	$btn_versions.text = "Case %s episode %s, part %s" % [case_i+1, ep_i+1, part_i]
+	#if in browser, update url params
+	if OS.has_feature('JavaScript'):
+		var js = """
+		var url = new URL(window.location.href);
+		url.searchParams.set("part", %s);
+		url.searchParams.set("case", %s);
+		url.searchParams.set("episode", %s);
+		window.history.pushState({ path: url.href }, '', url.href);
+		"""%[part_i, case_i+1, ep_i+1] #case and episode count from 1. Part does not
+		JavaScript.eval(js, false)
+	
+	#load record data
 	recordData = data[case_i][ep_i][part_i]
+	#refresh the court record.
 	refresh()
 func refresh():
 	$img_background.texture = profile_background if profiles_mode else evidence_background
