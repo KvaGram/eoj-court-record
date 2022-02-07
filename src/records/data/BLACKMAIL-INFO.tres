@@ -1,9 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/BLACKMAIL.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Blackmail Letter"
+description = "A message written with letters cut out from a
+magazine, ordering that the CMC must come to the
+bridge leading to the Castle of the Two Sisters at
+10:00 on the night of the crime. Brought there by
+Scootaloo. Found in some bushes near crime scene."
+icon = ExtResource( 2 )
 fullscreens = [  ]

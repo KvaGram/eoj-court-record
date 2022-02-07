@@ -1,9 +1,16 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/EVERFREEDIAGRAM02.png" type="Texture" id=2]
+[ext_resource path="res://src/resources/evidence/EVERFREEDIAGRAM01.png" type="Texture" id=3]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
-fullscreens = [  ]
+name = "Everfree Forest Diagram"
+description = "A diagram that shows the path leading from
+the entrance of the Everfree Forest to its
+various destinations. The time it takes to get
+to each location has also been added by
+Mr. Wright."
+icon = ExtResource( 3 )
+fullscreens = [ ExtResource( 3 ), ExtResource( 2 ) ]

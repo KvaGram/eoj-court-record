@@ -1,9 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/CRIMESCENEPHOTO2.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
-fullscreens = [  ]
+name = "Crime Scene Photo 2"
+description = "A picture of the victim's body before it was
+removed for autopsy. Traces of the victim's
+blood were detected underneath the cape
+he was lying on."
+icon = ExtResource( 2 )
+fullscreens = [ ExtResource( 2 ) ]

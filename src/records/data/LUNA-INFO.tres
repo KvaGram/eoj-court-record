@@ -1,9 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/LUNA.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Luna"
+description = "Age: ??
+One of the two rulers of Equestria, and the
+prosecutor assigned to this case. A forceful
+pony whose behavior seems to mask an
+unknown agenda."
+icon = ExtResource( 2 )
 fullscreens = [  ]

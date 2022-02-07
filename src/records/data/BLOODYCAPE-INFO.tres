@@ -1,9 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/BLOODYCAPE.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Bloodstained Cape"
+description = "A cape belonging to the Cutie Mark
+Crusaders. It was discovered underneath the
+victim’s head, soaked in his blood. Zecora
+mistook this cape for an actual bloodstain."
+icon = ExtResource( 2 )
 fullscreens = [  ]

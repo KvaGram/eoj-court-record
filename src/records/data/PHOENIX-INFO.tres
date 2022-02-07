@@ -1,9 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/PHOENIX.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Phoenix Wright"
+description = "Age: 35
+The lawyer who owns the agency I work for.
+I owe him for giving me the chance to
+become a full-fledged lawyer.
+"
+icon = ExtResource( 2 )
 fullscreens = [  ]

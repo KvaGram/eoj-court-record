@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/records/About/QUESTION_MARK.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "PLACEHOLDER"
+description = "This is a placeholder.
+If you see this, then what you are
+currently attempting to read must be missing.
+Check in help/About - known issues to see if and why this
+is a known issue. It probobly is."
+icon = ExtResource( 2 )
+fullscreens = [  ]

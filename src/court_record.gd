@@ -8,6 +8,7 @@ export(StreamTexture) var evidence_background
 export(StreamTexture) var profile_background
 export(StreamTexture) var empty_item
 export(Array, Resource) var about_data
+export(Array, Resource) var fallback_list
 
 var recordData:RecordData
 var itempage := 0
@@ -113,7 +114,7 @@ func on_part_selected(part_i, case_i, ep_i):
 	refresh()
 func refresh():
 	$img_background.texture = profile_background if profiles_mode or about_mode else evidence_background
-	var itemlist:Array = about_data if about_mode else recordData.profiles if profiles_mode else recordData.evidence
+	var itemlist:Array = get_itemList()
 	#sanitize the itempage
 	itempage = clamp(itempage, 0, int((len(itemlist)-1)/10))
 	for i in range(10):
@@ -129,10 +130,15 @@ func refresh():
 		$itemrow/NEXT.disabled = len(itemlist) <= ((itempage+1) * 10)
 	on_item_selected(0)
 	
+func get_itemList():
+	var itemlist:Array = about_data if about_mode else recordData.profiles if profiles_mode else recordData.evidence
+	#fallback option
+	itemlist = fallback_list if len(itemlist) <= 0 else itemlist
+	return itemlist
 
 func on_item_selected(index:int):
 	s_item = index + 10*itempage
-	var itemlist:Array = about_data if about_mode else recordData.profiles if profiles_mode else recordData.evidence
+	var itemlist:Array = get_itemList()
 	if(s_item >= len(itemlist)):
 		$txt_title.text = ""
 		$txt_details.bbcode_text = ""
@@ -152,7 +158,7 @@ func on_item_selected(index:int):
 		$img_item.texture = edata.icon	
 
 func refresh_details():
-	var itemlist:Array = recordData.profiles if profiles_mode else recordData.evidence
+	var itemlist:Array = get_itemList()
 	if(s_item >= len(itemlist)):
 		$pop_fullscreens.hide() #contingency. Hide if selected item does not exists
 		return

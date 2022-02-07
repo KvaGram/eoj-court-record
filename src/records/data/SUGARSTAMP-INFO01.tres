@@ -1,9 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/SUGARSTAMP.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Sugar Stamp"
+description = "Age: 34
+A peppy mailpony that delivered mine and
+Apollo’s Equestrian Attorney Badges. She
+loves giving out candy to children she meets
+while on duty. Also a pretty fast flier."
+icon = ExtResource( 2 )
 fullscreens = [  ]

@@ -1,9 +1,18 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=6 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/BACKSTATUE2.png" type="Texture" id=2]
+[ext_resource path="res://src/resources/evidence/BACKSTATUE.png" type="Texture" id=3]
+[ext_resource path="res://src/resources/evidence/STATUEBLOODSTAIN.png" type="Texture" id=4]
+[ext_resource path="res://src/resources/evidence/Nighmare_Statue_NewBlood.png" type="Texture" id=5]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
-fullscreens = [  ]
+name = "Statue Bloodstain"
+description = "Bloodstain found on, in front of, and behind
+the Nightmare Night Statue. Small pool
+belongs to Sweetie Belle; large stain belongs
+to Royal Order and Sweetie Belle. Bloodstain
+has been wiped, aside from small pool."
+icon = ExtResource( 4 )
+fullscreens = [ ExtResource( 3 ), ExtResource( 2 ), ExtResource( 5 ) ]

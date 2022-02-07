@@ -1,9 +1,13 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/BROKENHANDLEBAR.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Broken Handlebar"
+description = "The broken handlebar that had been missing
+from Scootaloo’s scooter. It was found in the
+trees along the crossroads."
+icon = ExtResource( 2 )
 fullscreens = [  ]

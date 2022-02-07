@@ -1,9 +1,14 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/SILVERSPOON.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Silver Spoon"
+description = "Age: 9
+Diamond Tiara’s lackey. She frequently
+bullies the CMC, and was one of the ponies
+behind the blackmail attempt."
+icon = ExtResource( 2 )
 fullscreens = [  ]

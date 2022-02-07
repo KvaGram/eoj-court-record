@@ -1,9 +1,16 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/DOCUMENT.png" type="Texture" id=2]
+[ext_resource path="res://src/resources/evidence/CRIMESCENEPHOTOFORENSICTEST2.png" type="Texture" id=3]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
-fullscreens = [  ]
+name = "Royal Order's Autopsy Report"
+description = "TOD: 9:30 -10:30 pm. COD: Stab wound to
+right temple. Death was instant. Several post-
+mortem stab wounds found at same spot.
+Large bruise on left side of torso ante-mortem.
+Under effects of poison joke: weak knees."
+icon = ExtResource( 2 )
+fullscreens = [ ExtResource( 3 ), null ]

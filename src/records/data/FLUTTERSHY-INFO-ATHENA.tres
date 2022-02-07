@@ -1,9 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/FLUTTERSHY.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Fluttershy"
+description = "Age: 23
+An adorable, sweet mare who enjoys caring
+for wild animals in her cottage. Typically shy,
+but gets excitable when talking about
+wildlife."
+icon = ExtResource( 2 )
 fullscreens = [  ]

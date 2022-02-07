@@ -1,0 +1,17 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/records/About/EXLEMATION_MARK.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+
+[resource]
+script = ExtResource( 1 )
+name = "Known issues (page 1 of 1)"
+description = "[center]Version 0.02[/center]
+Most age labels in profiles are not
+yet right-allined. Buttons do not fit
+overal Ace Attorney style. No available court
+data prior to case 2 episode 2."
+icon = ExtResource( 2 )
+fullscreens = [ SubResource( 1 ) ]

@@ -1,9 +1,15 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/PINKIEPIE.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Pinkie Pie"
+description = "Age: 22
+A bubbly party pony who...
+Hey Thena! Writing stuff about me?! Looks
+like it’s your turn to defend somepony!
+...Uh, what just happened?"
+icon = ExtResource( 2 )
 fullscreens = [  ]

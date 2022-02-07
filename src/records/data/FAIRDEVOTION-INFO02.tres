@@ -1,9 +1,16 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/FAIRDEVOTION.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
-name = ""
-description = ""
+name = "Fair Devotion"
+description = "Age: 36
+A stern mare grieving over her husband's
+death. Seems gravely concerned for
+Turning’s education. Works for the local
+school as a substitute teacher.
+"
+icon = ExtResource( 2 )
 fullscreens = [  ]
