@@ -6,11 +6,10 @@
 [resource]
 script = ExtResource( 1 )
 name = "Fair Devotion"
-description = "Age: 36
+description = "[right]Age: 36 [/right]
 A stern mare grieving over her husband's
 death. Seems gravely concerned for
 Turning’s education. Works for the local
-school as a substitute teacher.
-"
+school as a substitute teacher."
 icon = ExtResource( 2 )
 fullscreens = [  ]

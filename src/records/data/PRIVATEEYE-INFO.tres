@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Private Eye"
-description = "Age: 39
+description = "[right]Age: 39 [/right]
 A gentlemanly investigator in charge of this
 case. Very polite, but seems to know more
 than he’s letting on."

@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Twilight Sparkle"
-description = "Age: 24
+description = "[right]Age: 24 [/right]
 The alicorn Princess of Friendship. The one
 who summoned us to Equestria. Quite the
 bookworm."

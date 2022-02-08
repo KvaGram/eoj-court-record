@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Phoenix Wright"
-description = "Age: 35
+description = "[right]Age: 35 [/right]
 The lawyer who owns the agency I work for.
 I owe him for giving me the chance to
 become a full-fledged lawyer.

@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Apple Bloom"
-description = "Age: 9
+description = "[right]Age:  9 [/right]
 A member of the Cutie Mark Crusaders.
 Something like an apprentice to Zecora.
 Tagged along for the investigation."

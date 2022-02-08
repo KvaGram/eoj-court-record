@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Rarity"
-description = "Age: 25
+description = "[right]Age: 25 [/right]
 An uptight mare, famous in the fashion
 industry. Bit of a drama queen, but clearly
 cares for her friends."

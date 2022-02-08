@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Trucy Wright"
-description = "Age: 17
+description = "[right]Age: 17 [/right]
 Mr. Wright’s darling daughter. She wants to
 be a famous magician someday."
 icon = ExtResource( 2 )

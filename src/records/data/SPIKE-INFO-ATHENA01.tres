@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Spike"
-description = "Age: 16
+description = "[right]Age: 16 [/right]
 A cute little dragon who lives with Twilight.
 Despite his age, he’s still considered a baby
 among his peers.

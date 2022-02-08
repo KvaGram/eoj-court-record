@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "Royal Order"
-description = "[right]Age: 38[/right]
+description = "[right]Age: 38 [/right]
 The victim. Member of the Royal Guard.
 Father of Turning Page. Husband of Fair
 Devotion."

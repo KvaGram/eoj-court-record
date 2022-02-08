@@ -259,7 +259,7 @@ __meta__ = {
 [node name="txt_details" type="RichTextLabel" parent="."]
 margin_left = 545.0
 margin_top = 186.0
-margin_right = 1447.0
+margin_right = 1444.0
 margin_bottom = 551.0
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = ExtResource( 5 )
