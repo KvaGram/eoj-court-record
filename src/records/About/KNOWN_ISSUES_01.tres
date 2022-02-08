@@ -8,10 +8,8 @@
 [resource]
 script = ExtResource( 1 )
 name = "Known issues (page 1 of 1)"
-description = "[center]Version 0.02[/center]
-Most age labels in profiles are not
-yet right-allined. Buttons do not fit
-overal Ace Attorney style. No available court
-data prior to case 2 episode 2."
+description = "[right]Version 0.03 [/right]
+Buttons do not fit overal Ace Attorney style.
+No available court data prior to case 2 episode 2."
 icon = ExtResource( 2 )
 fullscreens = [ SubResource( 1 ) ]

@@ -6,7 +6,7 @@
 [resource]
 script = ExtResource( 1 )
 name = "KvaGram"
-description = "[right]Age 29[/right]
+description = "[right]Age 29 [/right]
 A 'very' humble programmer who built this
 Interactive court record.
 Please report any bugs to the github-page.
