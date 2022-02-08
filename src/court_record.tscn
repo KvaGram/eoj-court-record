@@ -132,14 +132,14 @@ __meta__ = {
 }
 
 [node name="PREV" type="Button" parent="itemrow"]
-margin_right = 27.0
+margin_right = 28.0
 margin_bottom = 130.0
 custom_fonts/font = ExtResource( 11 )
 text = "<"
 
 [node name="items" type="HBoxContainer" parent="itemrow"]
-margin_left = 31.0
-margin_right = 1367.0
+margin_left = 32.0
+margin_right = 1368.0
 margin_bottom = 130.0
 alignment = 1
 __meta__ = {
@@ -226,8 +226,8 @@ texture_normal = ExtResource( 3 )
 expand = true
 
 [node name="NEXT" type="Button" parent="itemrow"]
-margin_left = 1371.0
-margin_right = 1398.0
+margin_left = 1372.0
+margin_right = 1400.0
 margin_bottom = 130.0
 custom_fonts/font = ExtResource( 11 )
 text = ">"
@@ -248,7 +248,7 @@ margin_left = 545.0
 margin_top = 75.0
 margin_right = 1447.0
 margin_bottom = 176.0
-custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0.921569, 0.878431, 0.792157, 1 )
 custom_fonts/font = ExtResource( 6 )
 text = "Everfree Forest Clearing Photo"
 valign = 1
@@ -261,6 +261,7 @@ margin_left = 545.0
 margin_top = 186.0
 margin_right = 1447.0
 margin_bottom = 551.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/normal_font = ExtResource( 5 )
 bbcode_enabled = true
 bbcode_text = "A message written with letters cut out from a

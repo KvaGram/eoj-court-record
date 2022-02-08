@@ -1,7 +1,7 @@
 [gd_resource type="DynamicFont" load_steps=2 format=2]
 
-[ext_resource path="res://src/resources/UbuntuMono-R.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://src/resources/suburga-2-semi-condensed-regular.otf" type="DynamicFontData" id=1]
 
 [resource]
-size = 55
+size = 70
 font_data = ExtResource( 1 )
