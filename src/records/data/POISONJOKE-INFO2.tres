@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/POISONJOKE.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/POISONJOKE.png-18c5fbc8734c1a761883403d365babe2.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -11,5 +14,5 @@ Everfree Forest. It plays ironic jokes on
 anyone who touches it. Natural growth is
 limited this time of the year. The flowers in
 front of Zecora’s Hut were planted recently."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

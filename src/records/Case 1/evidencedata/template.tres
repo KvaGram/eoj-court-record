@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/DOCUMENT.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "UNKNOWN EVIDENCE"
+description = "I mean it is some kind of evidence. Like conjecture, you know.
+It MIGHT be relevant.
+Go ahead, present it, see what it does."
+icon = ExtResource( 2 )
+fullscreens = [  ]

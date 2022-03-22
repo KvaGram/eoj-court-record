@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/UNKNOWN_PONY.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Sapphire Rock"
+description = "[right]Age: ?? [/right]
+Welcome back! This is KvaGram the Autistic duck.. uh what?
+What do you mean I'm on the record?
+Waht about the other character? uh.. shit.. ok. Sorry.
+Hi. I'm Sapphire Rock."
+icon = ExtResource( 2 )
+fullscreens = [  ]

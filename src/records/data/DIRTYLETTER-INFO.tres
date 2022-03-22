@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/DIRTYLETTER.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/DIRTYLETTER.png-68a109981236d8fd966c901d1e298d4d.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -9,5 +12,5 @@ name = "Dirty Letter"
 description = "A letter Zecora received, sent by one of the
 princesses in Canterlot. Much dirtier than the
 other letters in Zecora’s mailbox."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

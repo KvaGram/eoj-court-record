@@ -6,10 +6,10 @@
 [resource]
 script = ExtResource( 1 )
 name = "KvaGram"
-description = "[right]Age 29 [/right]
+description = "[right]Age 30 [/right]
 A 'very' humble programmer who built this
 Interactive court record.
 Please report any bugs to the github-page.
-https://github.com/KvaGram/eoj-court-record/issues"
+https://github.com/KvaGram/interactive-court-record/issues"
 icon = ExtResource( 2 )
 fullscreens = [  ]

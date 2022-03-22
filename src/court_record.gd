@@ -43,7 +43,7 @@ func _ready():
 	var part_i := 0
 	for case in data:
 		var case_menu = PopupMenu.new()
-		case_menu.name = "Case " + str(case_i+1)#cases are counted from 1
+		case_menu.name = "Case " + str(case_i)#cases are counted from 0
 		pop_version.add_child(case_menu)
 		pop_version.add_submenu_item(case_menu.name, case_menu.name)
 		ep_i = 0
@@ -67,7 +67,7 @@ func _ready():
 	if OS.has_feature('JavaScript'):
 		part_i = _loadparam("part") # part counts from 0
 		#print("loaded part index " + str(part_i))
-		case_i = _loadparam("case") -1 # case's display counts from 1
+		case_i = _loadparam("case") # case's display counts from 0
 		#print("loaded part case " + str(case_i))
 		ep_i = _loadparam("episode") -1 # episode's display counts from 1
 		#print("loaded part episode " + str(ep_i))
@@ -96,7 +96,7 @@ func on_part_selected(part_i, case_i, ep_i):
 	print("corrected to - part_i " + str(part_i) + " - case_i " + str(case_i) + " - ep_i " + str(ep_i) )
 	
 	#set display-text on version-button
-	$btn_versions.text = "Case %s episode %s, part %s" % [case_i+1, ep_i+1, part_i]
+	$btn_versions.text = "Case %s episode %s, part %s" % [case_i, ep_i+1, part_i]
 	#if in browser, update url params
 	if OS.has_feature('JavaScript'):
 		var js = """
@@ -105,7 +105,7 @@ func on_part_selected(part_i, case_i, ep_i):
 		url.searchParams.set("case", %s);
 		url.searchParams.set("episode", %s);
 		window.history.pushState({ path: url.href }, '', url.href);
-		"""%[part_i, case_i+1, ep_i+1] #case and episode count from 1. Part does not
+		"""%[part_i, case_i, ep_i+1] #episode count from 1. Part and case does not
 		JavaScript.eval(js, false)
 	
 	#load record data

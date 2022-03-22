@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/profiles/FAIRDEVOTION.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/FAIRDEVOTION.png-d9f40ba94baf75271057cfb1b0f17770.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -11,5 +14,5 @@ A stern mare grieving over her husband's
 death. Seems gravely concerned for
 Turning’s education. Works for the local
 school as a substitute teacher."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/CMC-CAPES.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/CMC-CAPES.png-da22d672048cc4425b94bf1e998f8fbc.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -11,5 +14,5 @@ third was taken in by the police for
 examination. The outside of the capes are
 red, and each has a blue emblem. The
 insides are lined with golden silk."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

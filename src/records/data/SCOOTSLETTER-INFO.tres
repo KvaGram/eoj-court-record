@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/SCOOTSLETTER.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/SCOOTSLETTER.png-f2134059f374996bddabdc3aa3a80072.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -10,5 +13,5 @@ description = "A confession from Scootaloo to Rarity for
 stealing one of her rolls of golden silk fabric.
 It was left in Carousel Boutique at some point
 yesterday."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/CRIMESCENEPHOTO2.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/CRIMESCENEPHOTO2.png-5d304b48931ca0c684951ff231a0e417.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -10,5 +13,5 @@ description = "A picture of the victim's body before it was
 removed for autopsy. Traces of the victim's
 blood were detected underneath the cape
 he was lying on."
-icon = ExtResource( 2 )
-fullscreens = [ ExtResource( 2 ) ]
+icon = SubResource( 1 )
+fullscreens = [ SubResource( 1 ) ]

@@ -5,11 +5,8 @@
 
 [resource]
 script = ExtResource( 1 )
-name = "Known issues (page 1 of 1)"
+name = "Known issues Freedom for all (page 1 of 1)"
 description = "[right]Version 0.03 [/right]
-Buttons do not fit overal Ace Attorney style.
-No available court data prior to case 2 episode 2.
-profiles and evidence are not in the correct order.
-You can help correct that. Please let me know how it should be."
+Buttons do not fit overal Ace Attorney style."
 icon = ExtResource( 2 )
 fullscreens = [  ]

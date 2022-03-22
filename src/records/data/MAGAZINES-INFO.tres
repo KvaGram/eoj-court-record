@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/MAGAZINES.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/MAGAZINES.png-15cf47afdfaff2b3ed9aeaae4fdd6e7d.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -11,5 +14,5 @@ Several letters have been cut-out from the
 pages. They match the letters used to write
 the blackmail letter.
 "
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

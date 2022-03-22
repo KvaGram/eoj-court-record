@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/profiles/PHOENIX.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/PHOENIX.png-fc6cc13f51cdca5b4995a1f5db4aab1e.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -11,5 +14,5 @@ The lawyer who owns the agency I work for.
 I owe him for giving me the chance to
 become a full-fledged lawyer.
 "
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

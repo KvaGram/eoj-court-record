@@ -1,8 +1,14 @@
 [gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/WAGON.png" type="Texture" id=2]
-[ext_resource path="res://src/resources/evidence/WAGONIMPRINT.png" type="Texture" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/WAGONIMPRINT.png-6ff7cbd47439389f0066ff0e679e1a8e.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/WAGON.png-5ff70acf5d1de64bdacf21dbc8c71b2f.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -12,5 +18,5 @@ Usually used to carry around Apple Bloom
 and Sweetie Belle. There is a strange mark
 on the floor left in dried mud - wasn’t there on
 the afternoon of the murder."
-icon = ExtResource( 2 )
-fullscreens = [ ExtResource( 3 ) ]
+icon = SubResource( 2 )
+fullscreens = [ SubResource( 1 ) ]

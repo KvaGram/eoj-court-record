@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/GOLDSILKROLL.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/GOLDSILKROLL.png-a309499944711c23490e65f5654b0cfd.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -9,5 +12,5 @@ name = "Roll of Golden Silk"
 description = "Rarity’s custom-made silk. Sweetie Belle used
 it when making the CMC capes. A roll of it
 was found in Scootaloo’s wagon."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

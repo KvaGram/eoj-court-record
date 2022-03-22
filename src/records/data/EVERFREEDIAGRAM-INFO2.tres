@@ -1,8 +1,14 @@
 [gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/EVERFREEDIAGRAM02.png" type="Texture" id=2]
-[ext_resource path="res://src/resources/evidence/EVERFREEDIAGRAM01.png" type="Texture" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/EVERFREEDIAGRAM01.png-5b76d424068b2e118b8d500cf387f6ac.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/EVERFREEDIAGRAM02.png-27d08160ea4933192cd7f929a1840784.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -12,5 +18,5 @@ the entrance of the Everfree Forest to its
 various destinations. The time it takes to get
 to each location has also been added by
 Mr. Wright."
-icon = ExtResource( 3 )
-fullscreens = [ ExtResource( 3 ), ExtResource( 2 ) ]
+icon = SubResource( 1 )
+fullscreens = [ SubResource( 1 ), SubResource( 2 ) ]

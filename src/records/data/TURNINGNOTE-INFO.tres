@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/TURNINGNOTE.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/TURNINGNOTE.png-c4489f5547c66553ce8182e5fcd0cdb2.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -9,5 +12,5 @@ name = "Turning’s Note"
 description = "A note left by Turning on the night of the
 murder. Reads: “Went to the Everfree Forest.
 Be back soon.”"
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

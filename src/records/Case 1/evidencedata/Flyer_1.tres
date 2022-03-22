@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/evidence/DOCUMENT.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Wonderbolt Performance Flyer"
+description = "Come Witness the great wonders of the Equestrian aerial team on Clovila 18th at 12:00am right after the end of the Grand Galloping Gala. To purchase tickets, please book them via Canterlot’s ticket association located in the main square."
+icon = ExtResource( 2 )
+fullscreens = [  ]

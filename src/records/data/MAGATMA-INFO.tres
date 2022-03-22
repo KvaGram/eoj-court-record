@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/MAGATAMA.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/MAGATAMA.png-96dc38aa3f364d11f2b6ab8d06dd7e15.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -10,5 +13,5 @@ description = "A weird stone that the boss carries around
 with him everywhere. Apparently, it lets you
 see people's secrets, but | don’t really
 understand it."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

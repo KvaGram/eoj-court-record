@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/profiles/APOLLO.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/APOLLO.png-a345889593c36c9ddde98e1640661288.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -10,5 +13,5 @@ description = "[right]Age: 24 [/right]
 A lawyer who’s been at the agency since
 before | joined. He has an amazing ability to
 spot lies through people’s tells."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

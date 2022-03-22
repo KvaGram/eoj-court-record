@@ -1,8 +1,14 @@
 [gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/SCOOTERHANDLE.png" type="Texture" id=2]
-[ext_resource path="res://src/resources/evidence/SCOOTER.png" type="Texture" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/SCOOTERHANDLE.png-29bde40010e776c489257fc525d4dbb1.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/SCOOTER.png-7f1e47760754e9e8906dc5a757da4fd8.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -12,5 +18,5 @@ body. The left handle is missing, and the
 exposed metal bolt is covered in the victim’s
 blood. The front wheels are also dented,
 making riding the scooter impossible."
-icon = ExtResource( 3 )
-fullscreens = [ ExtResource( 2 ) ]
+icon = SubResource( 2 )
+fullscreens = [ SubResource( 1 ) ]

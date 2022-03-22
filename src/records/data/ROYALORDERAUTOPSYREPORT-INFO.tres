@@ -2,7 +2,10 @@
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
 [ext_resource path="res://src/resources/evidence/DOCUMENT.png" type="Texture" id=2]
-[ext_resource path="res://src/resources/evidence/CRIMESCENEPHOTOFORENSICTEST2.png" type="Texture" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/CRIMESCENEPHOTOFORENSICTEST2.png-7c21ee8ec24fb40c866021e0bed951b7.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -13,4 +16,4 @@ mortem stab wounds found at same spot.
 Large bruise on left side of torso ante-mortem.
 Under effects of poison joke: weak knees."
 icon = ExtResource( 2 )
-fullscreens = [ ExtResource( 3 ), null ]
+fullscreens = [ SubResource( 1 ), null ]

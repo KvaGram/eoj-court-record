@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/CRIMESCENEDIAGRAM.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/CRIMESCENEDIAGRAM.png-3a6275b2e4074e50a22784c147109f98.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -9,5 +12,5 @@ name = "Crime Scene Diagram"
 description = "A diagram showing a detailed overview of
 the scene of the crime - the foot of the bridge
 leading to the Castle of the Two Sisters."
-icon = ExtResource( 2 )
-fullscreens = [ ExtResource( 2 ) ]
+icon = SubResource( 1 )
+fullscreens = [ SubResource( 1 ) ]

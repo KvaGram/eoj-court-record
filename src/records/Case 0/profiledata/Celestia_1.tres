@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/UNKNOWN_PONY.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Celestia"
+description = "[right]Age: ?? [/right]
+Dear Princess Celestia. Today I leanred about the wonderfull
+magic of the court record.
+Please don't fail me. I worked hard on this.
+ - Your faithfull student"
+icon = ExtResource( 2 )
+fullscreens = [  ]

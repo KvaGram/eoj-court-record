@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/profiles/TRUCY.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/TRUCY.png-f4242ea43b3b4c445e5f09979604b9d3.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -9,5 +12,5 @@ name = "Trucy Wright"
 description = "[right]Age: 17 [/right]
 Mr. Wright’s darling daughter. She wants to
 be a famous magician someday."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

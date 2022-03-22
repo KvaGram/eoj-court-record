@@ -1,8 +1,14 @@
 [gd_resource type="Resource" load_steps=4 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/CLEARINGPHOTO01.png" type="Texture" id=2]
-[ext_resource path="res://src/resources/evidence/clearingphoto.png" type="Texture" id=3]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/clearingphoto.png-1651f17ba993e0b15d7ce9516b171063.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 4
+load_path = "res://.import/CLEARINGPHOTO01.png-abf918bf794ecb9188403a51ef09e632.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -12,5 +18,5 @@ Everfree Forest. A bloodstain that has been
 wiped away is shown. After testing, the
 blood was confirmed to belong to Royal
 Order."
-icon = ExtResource( 2 )
-fullscreens = [ ExtResource( 3 ) ]
+icon = SubResource( 2 )
+fullscreens = [ SubResource( 1 ) ]

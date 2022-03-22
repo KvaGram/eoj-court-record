@@ -1,0 +1,18 @@
+[gd_resource type="Resource" load_steps=12 format=2]
+
+[ext_resource path="res://src/RecordData.gd" type="Script" id=1]
+[ext_resource path="res://src/records/Case 0/profiledata/StarDust_1.tres" type="Resource" id=2]
+[ext_resource path="res://src/records/Case 0/profiledata/Rainbow_1.tres" type="Resource" id=3]
+[ext_resource path="res://src/records/Case 0/profiledata/Twilight_1.tres" type="Resource" id=4]
+[ext_resource path="res://src/records/Case 0/profiledata/Phoenix_1.tres" type="Resource" id=5]
+[ext_resource path="res://src/records/Case 0/profiledata/Rarity_1.tres" type="Resource" id=6]
+[ext_resource path="res://src/records/Case 0/profiledata/Spike_1.tres" type="Resource" id=7]
+[ext_resource path="res://src/records/Case 0/profiledata/Pinkie_1.tres" type="Resource" id=8]
+[ext_resource path="res://src/records/Case 0/profiledata/Fluttershy_1.tres" type="Resource" id=9]
+[ext_resource path="res://src/records/Case 0/profiledata/Applejack_1.tres" type="Resource" id=10]
+[ext_resource path="res://src/records/Case 1/evidencedata/unknown.tres" type="Resource" id=11]
+
+[resource]
+script = ExtResource( 1 )
+evidence = [ ExtResource( 11 ) ]
+profiles = [ ExtResource( 4 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 9 ) ]

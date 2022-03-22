@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/BLACKMAIL.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/BLACKMAIL.png-03ccae5104c92b3e3c6a1d9343c2fdea.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -11,5 +14,5 @@ magazine, ordering that the CMC must come to the
 bridge leading to the Castle of the Two Sisters at
 10:00 on the night of the crime. Brought there by
 Scootaloo. Found in some bushes near crime scene."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

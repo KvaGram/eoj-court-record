@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
+[ext_resource path="res://src/resources/profiles/UNKNOWN_PONY.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+name = "Mi Amore \"Cadance\" Cadenza"
+description = "[right]Age: ?? [/right]
+unknown pony"
+icon = ExtResource( 2 )
+fullscreens = [  ]

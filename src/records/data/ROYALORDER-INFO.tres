@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/profiles/ROYALORDER.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/ROYALORDER.png-65407cba44589196fef57d26162d26f9.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -10,5 +13,5 @@ description = "[right]Age: 38 [/right]
 The victim. Member of the Royal Guard.
 Father of Turning Page. Husband of Fair
 Devotion."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

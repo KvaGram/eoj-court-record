@@ -1,9 +1,18 @@
 [gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/BACKSTATUE2.png" type="Texture" id=2]
-[ext_resource path="res://src/resources/evidence/BACKSTATUE.png" type="Texture" id=3]
-[ext_resource path="res://src/resources/evidence/STATUEBLOODSTAIN.png" type="Texture" id=4]
+
+[sub_resource type="StreamTexture" id=7]
+flags = 4
+load_path = "res://.import/BACKSTATUE.png-7489d14a7a83832a56657adffe2c108e.stex"
+
+[sub_resource type="StreamTexture" id=6]
+flags = 4
+load_path = "res://.import/BACKSTATUE2.png-985de12dc150936f38c8c688a778145f.stex"
+
+[sub_resource type="StreamTexture" id=9]
+flags = 4
+load_path = "res://.import/STATUEBLOODSTAIN.png-dedc90cedcd4eacb24a2ad237528aab9.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -13,5 +22,5 @@ the Nightmare Night Statue. The blood does
 not belong to the victim. All visible traces of
 the bloodstain were removed, except for a
 small pool behind the statue."
-icon = ExtResource( 4 )
-fullscreens = [ ExtResource( 3 ), ExtResource( 2 ) ]
+icon = SubResource( 9 )
+fullscreens = [ SubResource( 7 ), SubResource( 6 ) ]

@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/evidence/TIMBERWOLF.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/TIMBERWOLF.png-803360e34e323796d43bcd357a4b8d64.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -9,5 +12,5 @@ name = "Timberwolves"
 description = "A species of magical, violent dogs that live
 near the forest’s edge. Known to rip their
 prey apart in seconds."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]

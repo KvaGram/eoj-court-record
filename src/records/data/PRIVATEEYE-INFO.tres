@@ -1,7 +1,10 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://src/EvidenceData.gd" type="Script" id=1]
-[ext_resource path="res://src/resources/profiles/PRIVATEEYE.png" type="Texture" id=2]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 4
+load_path = "res://.import/PRIVATEEYE.png-fd54e219fe348d8fc3e6926f1de1979c.stex"
 
 [resource]
 script = ExtResource( 1 )
@@ -10,5 +13,5 @@ description = "[right]Age: 39 [/right]
 A gentlemanly investigator in charge of this
 case. Very polite, but seems to know more
 than he’s letting on."
-icon = ExtResource( 2 )
+icon = SubResource( 1 )
 fullscreens = [  ]
