@@ -22,7 +22,6 @@ load_path = "res://.import/EVIDENCE_BACKGROUND.png-2e09a129a25c4d5d668e50d57bdb8
 
 [sub_resource type="StreamTexture" id=6]
 flags = 4
-load_path = "res://.import/BACKSTATUE2.png-985de12dc150936f38c8c688a778145f.stex"
 
 [node name="court_record" type="Control"]
 anchor_right = 1.0
